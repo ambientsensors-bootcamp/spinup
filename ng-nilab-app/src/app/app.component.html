@@ -1,7 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<md-card>
+  Welcome to {{title}}!
+</md-card>
+<md-card><button md-raised-button color="accent" (click)="show=true">Show Picture!</button></md-card>
+<div style="text-align:center" *ngIf="show">
   <img width="300" src="https://lh3.googleusercontent.com/-WErvPlz3LRg/AAAAAAAAAAI/AAAAAAAAcKw/VOSFFrB62co/photo.jpg">
 </div>
